@@ -1,20 +1,37 @@
-import React from 'react';
+import React from "react";
 import "./Home.css";
+import Product from "./Product";
 function Home() {
-    return (
-        <div className='home'>
-            <div className="home__container">
-                <img className="home__image" src="https://i.gadgets360cdn.com/large/amazon_great_indian_sale_2020_prime_members_january_18_1579305871538.jpg?output-quality=80&output-format=webp" alt=""/>
-            
-            <div className="home__row">
-                {/* Product */}
-            </div>
+  return (
+    <div className="home">
+      <div className="home__container">
+        <img
+          className="home__image"
+          src="https://trak.in/wp-content/uploads/2020/10/images-2020-10-24T153811.037-2-1280x720.jpeg"
+          alt=""
+        />
 
-
-
-            </div>
+        <div className="home__row">
+          <Product 
+          title='The lean startup'
+          price={19.99}
+          image="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SX329_BO1,204,203,200_.jpg" 
+          rating={3} />
+          <Product />
         </div>
-    );
+
+        <div className="home__row">
+          <Product />
+          <Product />
+          <Product />
+        </div>
+
+        <div className="home__row">
+          <Product />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Home;
