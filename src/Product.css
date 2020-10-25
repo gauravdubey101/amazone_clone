@@ -8,7 +8,7 @@
     max-height: 400px;
     min-width: 100px;
     justify-content: flex-end;
-    align-items: center;
+    
     z-index: 1;
 }
 .product__info{
